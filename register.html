@@ -1,0 +1,39 @@
+<!--
+    @license Apache License 2.0
+
+    Copyright 2025 Kamil Malicki
+
+    Ten plik jest objęty licencją Apache 2.0, która umożliwia dowolne użycie,
+    modyfikację i dystrybucję, pod warunkiem zachowania powyższych informacji.
+    Pełna treść licencji: http://www.apache.org/licenses/LICENSE-2.0
+-->
+
+<!DOCTYPE html> <!-- Deklaracja dokumentu jako HTML5 -->
+<html lang="pl"> <!-- Ustawienie języka dokumentu na polski -->
+<head>
+<meta charset="UTF-8" /> <!-- Kodowanie UTF-8 dla obsługi polskich znaków -->
+<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsywność strony -->
+<title>Rejestracja</title> <!-- Tytuł strony -->
+<link rel="stylesheet" href="../css/style.css" /> <!-- Dołączenie stylów CSS -->
+</head>
+<body>
+  <div class="container"> <!-- Główny kontener strony -->
+    <form method="POST" action="../php/register.php"> <!-- Formularz rejestracji wysyłany metodą POST -->
+      <h2>Zarejestruj się</h2> <!-- Nagłówek formularza -->
+      <label for="email">Email</label> <!-- Etykieta dla pola email -->
+      <input type="email" id="email" name="email" required /> <!-- Pole do wpisania emaila -->
+      <label for="password">Hasło</label> <!-- Etykieta dla pola hasła -->
+      <input type="password" id="password" name="password" required /> <!-- Pole do wpisania hasła -->
+      <label for="password_confirm">Potwierdź hasło</label> <!-- Etykieta dla pola potwierdzenia hasła -->
+      <input type="password" id="password_confirm" name="password_confirm" required /> <!-- Pole do potwierdzenia hasła -->
+      <div class="btn-row"> <!-- Kontener przycisków -->
+        <button type="submit" class="btn-login">Zarejestruj</button> <!-- Przycisk wysyłający formularz rejestracji -->
+        <a href="login.html" class="btn-register">Zaloguj się</a> <!-- Link do strony logowania -->
+      </div>
+    </form>
+  </div>
+  <footer> <!-- Stopka strony -->
+  <p>© 2025 Kamil — <a href="https://github.com/KamilMalicki" target="_blank" rel="noopener noreferrer">Kamil Malicki</a></p> <!-- Informacja o autorze z linkiem do GitHub -->
+</footer>
+</body>
+</html>

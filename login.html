@@ -1,0 +1,47 @@
+<!--
+    @license Apache License 2.0
+
+    Copyright 2025 Kamil Malicki
+
+    Ten plik jest objęty licencją Apache 2.0, która umożliwia dowolne użycie,
+    modyfikację i dystrybucję, pod warunkiem zachowania powyższych informacji.
+    Pełna treść licencji: http://www.apache.org/licenses/LICENSE-2.0
+-->
+
+<!DOCTYPE html> <!-- Deklaracja dokumentu jako HTML5 -->
+<html lang="pl"> <!-- Ustawienie języka dokumentu na polski -->
+<head>
+    <meta charset="UTF-8" /> <!-- Kodowanie UTF-8 dla obsługi polskich znaków -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsywność strony -->
+    <title>Logowanie</title> <!-- Tytuł strony -->
+    <link rel="stylesheet" href="../css/style.css" /> <!-- Dołączenie stylów CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Główny kontener strony -->
+
+        <form class="card" method="POST" action="../php/login.php"> <!-- Formularz logowania wysyłany metodą POST -->
+
+            <h2>Zaloguj się</h2> <!-- Nagłówek formularza -->
+
+            <label for="email">Email</label> <!-- Etykieta dla pola email -->
+            <input type="email" name="email" id="email" required /> <!-- Pole do wpisania emaila -->
+
+            <label for="password">Hasło</label> <!-- Etykieta dla pola hasła -->
+            <input type="password" name="password" id="password" required /> <!-- Pole do wpisania hasła -->
+
+            <div class="btn-row"> <!-- Kontener przycisków -->
+
+                <button type="submit" class="btn-login">Zaloguj</button> <!-- Przycisk logowania -->
+                <a href="register.html" class="btn-register">Zarejestruj się</a> <!-- Link do rejestracji -->
+
+            </div>
+        </form>
+    </div>
+
+    <footer> <!-- Stopka strony -->
+        <p>© 2025 Kamil — 
+            <a href="https://github.com/KamilMalicki" target="_blank" rel="noopener noreferrer">Kamil Malicki</a> <!-- Link do GitHuba -->
+        </p>
+    </footer>
+</body>
+</html>
